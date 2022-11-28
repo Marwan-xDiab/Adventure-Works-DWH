@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-8QSFGFJ</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsUEwlI+bAkWi5h3RZAm/WwAAAAACAAAAAAAQZgAAAAEAACAAAAABOS3HuUkCkm2gC1nRNb4oUqvRY0JJ5TYx+3fKbmRydgAAAAAOgAAAAAIAACAAAADb5+D8O+6osZTICCBwpTeNfjEVmxoQJiGocI1Qk/OSrJAAAACTtfqSiA2J9ldLWB0MtElkckmgAbsF8Wi3EtKW/szGOKDoabq44YQZh2CwKiVtoLoDBfFt+498pJhA1KEqF9ObWxSLWRFWc2jo9Z8FkgzL+oD8e/M5dhpwf/IK8iNAnVAcFSSLuU+avepg2yNVxaU8YUnd2IN7N25m+XT/5BnRokgHW+JSjhrj2cj9K/agCmNAAAAALNIGfu2byDEzIUyMZthKv4jhrCY8DN8YT0d8+lkaT3DGsUqlLE8Ap3yxCJV03H0FF2agxuArHXAot5+4MUDVxQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsUEwlI+bAkWi5h3RZAm/WwAAAAACAAAAAAAQZgAAAAEAACAAAAARDPxtOmZbGGv4wzbHZRiFZ02m+N4oeZ+IQGNtVoDp4wAAAAAOgAAAAAIAACAAAAD65T0XRF0Bb3ijmtsdxO6XsGGtzVIb1dA/vb3hp2bgAZAAAACzkYQ9oes4rW6FQqCNyM7w4X6BXsllRj4/rPZ/t0145aAChKA9JaBhP84J1bF+dqde2lsH5NoiAaBqm52g8NIU7oBGWLwTsWD8BLkhdf4pQowHMCHIhG4CUH6krqViAk/mKm/Te3K44IK5b7FM/1rCCp/h3mZLa1bjhvoS7wTqlytId4h3sbFOd2lOMuxZccdAAAAAnZb+EOBtaP6OKSWOlikxQi/w6JYXNsaSnm9wbXr9I/5MJ76pszlDdlq701ZoaK5BFrWSfsf4h75QGuHOfjiGIQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
           <SSIS:Package SSIS:Name="Dim-Date.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Dim_Territory.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Fact Sales - Full Load.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Fact Sales - Incremental Load.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="SourceDB.conmgr" />
@@ -610,10 +611,27 @@
                 <SSIS:Property SSIS:Name="Name">Fact Sales - Full Load</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{90EFAFA1-30AA-4A2D-9EB5-3A3105D9DC0F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7189C7A6-CF9F-4D36-B871-4F26B8BB8953}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Fact Sales - Incremental Load.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{EB39B898-5276-469F-8ACE-3E398780863A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Fact Sales - Incremental Load</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C6B924A3-232B-4DCE-8A30-F8B067C9FCE9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
