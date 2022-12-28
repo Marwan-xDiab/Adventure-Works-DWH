@@ -1,4 +1,4 @@
-# Bulid Sales Data Mart Project
+# Building Sales Data Mart
  
 
 ## General Info
